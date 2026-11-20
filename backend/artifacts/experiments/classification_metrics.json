@@ -1,0 +1,43 @@
+{
+  "model_evaluated": "Random Forest (Champion)",
+  "horizon": "+24h",
+  "sample_count": 5094,
+  "overall_accuracy": 0.7422,
+  "macro_precision": 0.6439,
+  "macro_recall": 0.6185,
+  "macro_f1": 0.6271,
+  "weighted_f1": 0.7282,
+  "balanced_accuracy": 0.6185,
+  "per_class": {
+    "Good": {
+      "support": 2420,
+      "true_positive": 2160,
+      "sensitivity_recall": 0.8926
+    },
+    "Satisfactory": {
+      "support": 844,
+      "true_positive": 250,
+      "sensitivity_recall": 0.2962
+    },
+    "Moderate": {
+      "support": 215,
+      "true_positive": 116,
+      "sensitivity_recall": 0.5395
+    },
+    "Poor": {
+      "support": 153,
+      "true_positive": 66,
+      "sensitivity_recall": 0.4314
+    },
+    "Very Poor": {
+      "support": 1020,
+      "true_positive": 888,
+      "sensitivity_recall": 0.8706
+    },
+    "Severe": {
+      "support": 442,
+      "true_positive": 301,
+      "sensitivity_recall": 0.681
+    }
+  }
+}

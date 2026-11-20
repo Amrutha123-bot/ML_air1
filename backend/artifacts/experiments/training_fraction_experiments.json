@@ -1,0 +1,37 @@
+[
+  {
+    "fraction_pct": 15,
+    "training_samples": 3666,
+    "mean_test_mae": 40.7934,
+    "mean_test_rmse": 66.9197,
+    "mean_test_r2": 0.4953
+  },
+  {
+    "fraction_pct": 30,
+    "training_samples": 7333,
+    "mean_test_mae": 17.167,
+    "mean_test_rmse": 25.4627,
+    "mean_test_r2": 0.9269
+  },
+  {
+    "fraction_pct": 45,
+    "training_samples": 10999,
+    "mean_test_mae": 14.6459,
+    "mean_test_rmse": 20.4982,
+    "mean_test_r2": 0.9526
+  },
+  {
+    "fraction_pct": 60,
+    "training_samples": 14666,
+    "mean_test_mae": 14.6068,
+    "mean_test_rmse": 20.4338,
+    "mean_test_r2": 0.9529
+  },
+  {
+    "fraction_pct": 100,
+    "training_samples": 24444,
+    "mean_test_mae": 14.149,
+    "mean_test_rmse": 19.6598,
+    "mean_test_r2": 0.9564
+  }
+]

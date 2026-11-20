@@ -1,0 +1,74 @@
+{
+  "dataset_name": "AeroSense AI Delhi Synthetic Air Quality Dataset",
+  "dataset_type": "SYNTHETIC_SIMULATION",
+  "disclosure": "THIS DATASET IS ENTIRELY SYNTHETIC AND WAS GENERATED MATHEMATICALLY FOR MACHINE LEARNING TRAINING AND FORECASTING BENCHMARKS. IT DOES NOT REPRESENT DIRECT SENSOR MEASUREMENTS FROM CPCB OR GOVERNMENT MONITORING HARNESSES.",
+  "generation_timestamp": "2026-11-20T11:17:16.142688Z",
+  "random_seed": 42,
+  "location": {
+    "city": "Delhi",
+    "country": "India",
+    "station_id": "DEL_01",
+    "station_name": "Anand Vihar, Delhi",
+    "latitude": 28.6468,
+    "longitude": 77.316
+  },
+  "time_coverage": {
+    "start": "2020-01-01 00:00:00",
+    "end": "2023-12-31 23:00:00",
+    "sampling_interval": "1 hour",
+    "total_records": 35064,
+    "missing_values": 0,
+    "duplicate_records": 0
+  },
+  "variables": {
+    "particulate": [
+      "PM2.5 (\u00b5g/m\u00b3)",
+      "PM10 (\u00b5g/m\u00b3)"
+    ],
+    "gaseous": [
+      "NO (\u00b5g/m\u00b3)",
+      "NO2 (\u00b5g/m\u00b3)",
+      "NOx (ppb)",
+      "NH3 (\u00b5g/m\u00b3)",
+      "SO2 (\u00b5g/m\u00b3)",
+      "CO (mg/m\u00b3)",
+      "O3 (\u00b5g/m\u00b3)"
+    ],
+    "regulatory": [
+      "AQI (unitless)",
+      "AQI_Category (6 tiers)"
+    ],
+    "meteorological": [
+      "Temperature (\u00b0C)",
+      "Humidity (%)",
+      "Wind_Speed (m/s)"
+    ]
+  },
+  "statistics": {
+    "pm25": {
+      "mean": 83.48,
+      "std": 84.1,
+      "min": 5.0,
+      "p25": 21.68,
+      "median": 45.38,
+      "p75": 132.9,
+      "max": 515.83
+    },
+    "aqi": {
+      "mean": 192.22,
+      "std": 119.77,
+      "min": 31.5,
+      "median": 140.8,
+      "max": 500.0
+    },
+    "category_distribution": {
+      "Moderate": 16161,
+      "Satisfactory": 7975,
+      "Very Poor": 6291,
+      "Severe": 2902,
+      "Poor": 1632,
+      "Good": 103
+    }
+  },
+  "cpcb_methodology": "Indian National Air Quality Index (NAAQS) piecewise linear sub-index calculation"
+}
