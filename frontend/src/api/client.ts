@@ -250,4 +250,50 @@ export const apiService = {
   },
 };
 
+// ── Standalone convenience exports (used by page components) ────────────────
+
+export const getForecast = (
+  stationName: string = 'Anand Vihar',
+  model?: string,
+  horizon?: number,
+  offset: number = 0
+) => apiService.getForecast(stationName, model, horizon, offset);
+
+export const getWarnings = (
+  stationName: string = 'Anand Vihar',
+  model?: string,
+  offset: number = 0
+) => apiService.getWarnings(stationName, model, offset);
+
+export const getMetrics = () => apiService.getMetrics();
+
+export const getLeaderboard = async (): Promise<any> => {
+  const res = await apiClient.get('/metrics/leaderboard');
+  return res.data;
+};
+
+export const getConfusionMatrix = async (): Promise<any> => {
+  const res = await apiClient.get('/metrics/confusion');
+  return res.data;
+};
+
+export const getFractionResults = async (): Promise<any> => {
+  const res = await apiClient.get('/metrics/fractions');
+  return res.data;
+};
+
+export const getEDA = async (): Promise<any> => {
+  const res = await apiClient.get('/analytics/eda');
+  return res.data;
+};
+
+export const getStation = (stationName: string = 'Anand Vihar', limit: number = 24) =>
+  apiService.getStationHistory(stationName, limit);
+
+export const getTrends = async (city: string = 'delhi', station: string = 'Anand Vihar', limit: number = 24): Promise<any[]> => {
+  const res = await apiClient.get(`/analytics/trends/${encodeURIComponent(city)}/${encodeURIComponent(station)}`, { params: { limit } });
+  return res.data;
+};
+
+
 

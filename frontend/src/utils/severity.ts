@@ -124,3 +124,13 @@ export const getSeverityStyle = (tierOrLabel?: string, explicitColorHex?: string
 
   return base;
 };
+
+/** Classify a raw PM2.5 µg/m³ reading into a CPCB severity tier key. */
+export function classifyPM25Severity(pm25: number): string {
+  if (pm25 < 30)  return 'Good';
+  if (pm25 < 60)  return 'Satisfactory';
+  if (pm25 < 90)  return 'Moderate';
+  if (pm25 < 120) return 'Poor';
+  if (pm25 < 250) return 'Very Poor';
+  return 'Severe';
+}
