@@ -49,5 +49,12 @@ Thumbs.db
 *.tmp
 test_delhi_pipeline_read.txt
 
+# Large archives — never commit these (GitHub 100 MB limit)
+*.zip
+*.tar.gz
+*.tar
+*.rar
+*.7z
+
 # Git
 *.orig
